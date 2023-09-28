@@ -1,3 +1,2 @@
-# week1-notes
-ftryrtyrdeter
-rdydrytyu
+# Week1-notes
+
