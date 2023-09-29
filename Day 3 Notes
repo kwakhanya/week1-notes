@@ -1,1 +1,9 @@
-
+ Clickjacking, also known as a UI (User Interface) redress attack or UI redressing, is a type of malicious web attack where an attacker tricks a user into clicking on something different from what the user perceives. The attacker achieves this by overlaying or embedding a malicious webpage or element over a legitimate one, making it appear as if the user is interacting with the legitimate content.
+Introduction to Clickjacking
+ Clickjacking, also known as a UI (User Interface) redress attack or UI redressing, is a type of malicious web attack where an attacker tricks a user into clicking on something different from what the user perceives. The attacker achieves this by overlaying or embedding a malicious webpage or element over a legitimate one, making it appear as if the user is interacting with the legitimate content.
+Old school defenses (weak)
+ The oldest defense is a bit of JavaScript which forbids opening the page in a frame (so-called “framebusting”).
+X-Frame-Options
+ The X-Frame-Options HTTP response header is a security feature that helps prevent clickjacking attacks by controlling whether a web page can be displayed within an iframe or frame on another website. It allows web developers and administrators to specify who can embed their web content in frames, helping to protect against certain types of cross-site request forgery (CSRF) attacks.
+ Samesite cookie attribute
+ The SameSite cookie attribute is used to control how cookies are sent with cross-origin requests, helping to mitigate certain types of security vulnerabilities such as cross-site request forgery (CSRF) and cross-site scripting (XSS) attacks. This attribute specifies whether a cookie should be sent in a cross-origin request and under what conditions.
