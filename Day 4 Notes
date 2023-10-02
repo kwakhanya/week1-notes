@@ -1,1 +1,14 @@
+ Typed Arrays are a set of built-in objects in JavaScript that provide efficient ways to work with binary data directly in memory. They are designed for performing low-level operations on binary data, such as reading and writing values of specific data types at specific offsets within an ArrayBuffer. Typed Arrays are particularly useful for tasks like handling binary files, network protocols, and data manipulation.
+Daily Notes - Out-of-bounds behaviour
+ Out-of-bounds behavior refers to the behavior that occurs when you access an array or data structure at an index that is outside the valid range of indices for that array or data structure. In many programming languages, including JavaScript, accessing elements outside the valid index range can lead to unexpected and often undesirable consequences.
+Daily Notes - TypedArray methods
+ TypedArray has regular Array methods, with notable exceptions.
 
+We can iterate, map, slice, find, reduce, etc.
+
+There are a few things we can’t do though:
+
+No splice – we can’t “delete” a value, because typed arrays are views on a buffer, and these are fixed, contiguous areas of memory. All we can do is to assign a zero.
+No concat method.
+Daily Notes - DataView
+ DataView is a special super-flexible “untyped” view over ArrayBuffer. It allows accessing the data on any offset in any format.
