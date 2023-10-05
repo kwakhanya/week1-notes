@@ -1,1 +1,1 @@
-# Week1-notes
+#Intermediate Javascript Week1-notes
